@@ -1,0 +1,4 @@
+com\aem\cts\it\tests\CreatePageIT.class
+com\aem\cts\it\tests\HtmlUnitClient.class
+com\aem\cts\it\tests\GetPageIT.class
+com\aem\cts\it\tests\PublishPageValidationIT.class

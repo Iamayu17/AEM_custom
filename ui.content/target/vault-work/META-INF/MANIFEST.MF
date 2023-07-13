@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: AEM CTS Training - UI content
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.aem.cts:aem_cts_training.ui.content:1.0.0-SNAPSH
+ OT
+Content-Package-Description: UI content package for AEM CTS Training
+Content-Package-Dependencies: com.aem.cts:aem_cts_training.ui.apps:1.0.0
+ -SNAPSHOT
+Content-Package-Dependencies-Locations: com.aem.cts:aem_cts_training.ui.
+ apps:1.0.0-SNAPSHOT=maven:com.aem.cts:aem_cts_training.ui.apps:1.0.0-SN
+ APSHOT:zip
+Content-Package-Roots: /conf/aem_cts_training,/content/aem_cts_training,
+ /content/dam/aem_cts_training/asset.jpg,/content/experience-fragments/a
+ em_cts_training
+
