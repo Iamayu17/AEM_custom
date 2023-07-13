@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bundle-Category: AEM CTS Training
+Bundle-Description: Core bundle for AEM CTS Training
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM CTS Training - Core
+Bundle-SymbolicName: aem_cts_training.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.aem.cts.core.filters;version="1.0";uses:="javax.se
+ rvlet",com.aem.cts.core.listeners;version="1.0";uses:="org.apache.sli
+ ng.api.resource.observation",com.aem.cts.core.models;version="1.0";us
+ es:="com.adobe.cq.wcm.core.components.models,javax.annotation,javax.i
+ nject,org.apache.sling.api,org.apache.sling.api.resource,org.apache.s
+ ling.models.annotations,org.apache.sling.models.annotations.injectors
+ pecific",com.aem.cts.core.schedulers;version="1.0",com.aem.cts.core.s
+ ervlets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.a
+ pache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.cq.wcm.core
+ .components.models;version="[12.23,13)",com.aem.cts.core.filters;vers
+ ion="[1.0,2)",com.aem.cts.core.listeners;version="[1.0,2)",com.aem.ct
+ s.core.schedulers;version="[1.0,2)",com.aem.cts.core.servlets;version
+ ="[1.0,2)",com.day.cq.wcm.api;version="[1.27,2)",javax.inject;version
+ ="[1.0,2)",javax.servlet;version="[3.1,4)",org.apache.commons.lang3;v
+ ersion="[3.6,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sl
+ ing.api.request;version="[2.4,3)",org.apache.sling.api.resource;versi
+ on="[2.11,3)",org.apache.sling.api.resource.observation;version="[1.2
+ ,2)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.sling
+ .models.annotations;version="[1.5,2)",org.apache.sling.models.annotat
+ ions.injectorspecific;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aem.cts.core.filters.LoggingFilter.xml
+ ,OSGI-INF/com.aem.cts.core.listeners.SimpleResourceListener.xml,OSGI-
+ INF/com.aem.cts.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.
+ aem.cts.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.aem.cts.core.models.AuthorImpl,com.aem.cts.co
+ re.models.ChildLoginLinks,com.aem.cts.core.models.Details,com.aem.cts
+ .core.models.FirstMultiFieldModel,com.aem.cts.core.models.HelloWorldM
+ odel,com.aem.cts.core.models.LocationModelImpl,com.aem.cts.core.model
+ s.MultiFieldModel,com.aem.cts.core.models.Nested,com.aem.cts.core.mod
+ els.Nested$Heading,com.aem.cts.core.models.Nested$Nestedd,com.aem.cts
+ .core.models.NestedModelImpl,com.aem.cts.core.models.Nestedduplicate,
+ com.aem.cts.core.models.Nestedduplicate$Countrylocation,com.aem.cts.c
+ ore.models.Nestedduplicate$Linkes,com.aem.cts.core.models.PageLinksDe
+ tails,com.aem.cts.core.models.PageNavigation,com.aem.cts.core.models.
+ ProjectTeamImpl,com.aem.cts.core.models.SampleCustomNavigation,com.ae
+ m.cts.core.models.SecoundMultiFieldModel
+
